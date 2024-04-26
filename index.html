@@ -32,17 +32,17 @@
         </div>
         <nav id="mobileMenu">
             <ul>
-                <li onclick="hideSidebar();"><i class="fa-solid fa-x"></i></li>
-                <li>ABOUT US</li>
-                <li>CONTACT US</li>
-                <li>SHOP</li>
-                <li>GALLERY</li>
+                <li onclick="hideSidebar();"><i class="fa-solid fa-x" style="margin-top: 1rem; font-size: 2rem; margin-right: 1REM;"></i>CLOSE</li>
+                <li><i class="fa-solid fa-address-card" id="icon"></i>ABOUT US</li>
+                <li><i class="fa-solid fa-address-book" id="icon"></i>CONTACT US</li>
+                <li><i class="fa-solid fa-shop" id="icon"></i>SHOP</li>
+                <li><i class="fa-solid fa-image" id="icon"></i>GALLERY</li>
             </ul>
             <li class="tel"><a href="tel:+234-911-022-0397">(091)-1022-0397</a></li>
         </nav>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner" id="fade-in-section">
             <div class="banner-left">
               <img src="./product1.jpg" alt="Image 1">
               <div class="content1">
@@ -63,7 +63,7 @@
               </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="fade-in-section">
           <div class="card-container">
             <div class="card">
               <div class="card-front">
@@ -103,7 +103,7 @@
             </div>
           </div>
         </section>
-        <section class="section-three">
+        <section class="section-three" id="fade-in-section">
           <h1>BEST SELLERS</h1>
           <p class="best">Our Best Selling Collection has garnered worldwide acclaim, adored by fragrance enthusiasts and connoisseurs alike. Embrace the essence of luxury as you embark on a sensory journey, where each spritz transports you to a realm of sophistication and refinement.</p>
           <section class="best-sellers">
@@ -183,14 +183,14 @@
         </section>
 
         <!-- best offers section starts -->
-        <section class="section-three">
+        <section class="section-three" id="fade-in-section" >
           <h1>BEST OFFERS</h1>
           <div class="best-offers">
             <div class="giveaway-section">
-              <h2>GIVEAWAY</h2>
               <div class="description-giveaway">
                 <img src="./black-perfume with flower top.jpg">
                 <div class="giveaway-text">
+                  <h2>GIVEAWAY</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi rerum eaque officia magni libero explicabo ratione quisquam illum molestias atque, nihil unde beatae, dolorem similique nesciunt debitis tempore aperiam.</p>
                     <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore provident rem minus placeat quo sequi modi, harum, laboriosam temporibus pariatur repellat aperiam repudiandae ea quia impedit, similique vero dolorum necessitatibus?</p>
                     <button class="giveaway-btn">CONTACT US</button>
@@ -205,7 +205,7 @@
 
         <!-- gallery section -->
         <h2 class="gallery">GALLERY</h2>
-        <section class="best-sellers">
+        <section class="best-sellers" id="fade-in-section">
           <div class="product-card">
             <div class="product-face product-front">
               <img src="./78ae7d26be7f44f0dafca1e82cf0e131.jpg" alt="Product Image">
@@ -245,6 +245,47 @@
           </div>
         </section>
        
+        <!-- footer -->
+        <footer>
+          <div class="footer-content">
+              <div class="footer-column">
+                  <h3>Company</h3>
+                  <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Careers</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Support</h3>
+                  <ul>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Returns & Refunds</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Follow Us</h3>
+                  <ul class="social-media">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Newsletter</h3>
+                  <p>Sign up for our newsletter to receive exclusive offers and updates.</p>
+                  <form action="#" method="post">
+                      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                      <button type="submit" class="btn">Subscribe</button>
+                  </form>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; 2022 Beniga. All rights reserved.</p>
+          </div>
+        </footer>
     </main>
     <script src="index.js"></script>
 </body>
