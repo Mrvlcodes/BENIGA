@@ -650,6 +650,12 @@ input[type='email']{
     header{
         font-size: 1.4rem;
     }
+    .best-sellers{
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
     #mobileMenu{
         position: fixed;
         top:0;
