@@ -627,7 +627,9 @@ input[type='email']{
     }
     #icon {
       color: #E1B98A;
-      margin-right: 1rem;
+      margin-right: 2rem;
+        font-size: 2rem;
+        padding: 1.5rem;
     }
   }
 /* media queries */
@@ -639,6 +641,9 @@ input[type='email']{
     }
     nav{
         display: none;
+    }
+    body{
+        line-height: 1.8rem;
     }
     #menu-btn{
         display: inline;
