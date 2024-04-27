@@ -629,7 +629,7 @@ input[type='email']{
       color: #E1B98A;
       margin-right: 2rem;
         font-size: 2rem;
-        padding: 1.5rem;
+        padding: 1.3rem;
     }
   }
 /* media queries */
@@ -643,11 +643,18 @@ input[type='email']{
         display: none;
     }
     body{
-        line-height: 1.8rem;
+        line-height: 2.2rem;
     }
     #menu-btn{
         display: inline;
         margin-right: 1rem;
+        font-size: 2rem;
+    }
+    #icon {
+      color: #E1B98A;
+      margin-right: 2rem;
+        font-size: 2rem;
+        padding: 1.3rem;
     }
     .logo, .logoMobile {
         display: inline;
