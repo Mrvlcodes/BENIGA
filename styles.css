@@ -634,15 +634,15 @@ input[type='email']{
 @media (max-width: 970px) {
     i{
         margin-left: 1rem;
-        margin-right: 1rem;
-        font-size: 1.8rem;
+        margin-right: .5rem;
+        font-size: 2rem;
     }
     nav{
         display: none;
     }
     #menu-btn{
         display: inline;
-        margin-right: 3rem;
+        margin-right: 1rem;
     }
     .logo, .logoMobile {
         display: inline;
@@ -676,9 +676,11 @@ input[type='email']{
     #mobileMenu ul li {
         width:100%;
         display: block;
+        line-height: 2rem;
     }
     #mobileMenu ul li:first-child{
        margin-bottom: 1rem;
+        
     }
     .content1 h2 {
       font-size: 2.5rem;
@@ -695,6 +697,7 @@ input[type='email']{
     }
     .content2 p {
       font-size: 1rem;
+       line-height: 2rem;
     }
     .card-right {
       margin-right: 2rem;
@@ -704,6 +707,7 @@ input[type='email']{
     }
     .about-card{
       flex-direction: column;
+        line-height: 2rem;
     }
     .about-card img{
       display: none;
@@ -716,6 +720,7 @@ input[type='email']{
     }
     .card-right{
       width:100%;
+        line-height: 1.5rem;
     }
     .card-left{
       width: 100%;
@@ -746,6 +751,7 @@ input[type='email']{
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       text-align: center;
+        line-height: 2rem;
     }
 }
 @media (max-width:1180px){
