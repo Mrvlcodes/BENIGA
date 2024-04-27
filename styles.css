@@ -643,10 +643,10 @@ input[type='email']{
         display: none;
     }
     .content2 h1{
-        line-height: 2rem
+        line-height: 2.4rem
     }
     body{
-        line-height: 1.9rem;
+        line-height: 2.2rem;
     }
     
     #menu-btn{
