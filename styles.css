@@ -757,6 +757,9 @@ input[type='email']{
     .best {
         padding: 1rem;
     }
+    main{
+        padding: 0;
+    }
 }
 @media (max-width:423px){
     #mobileMenu{
