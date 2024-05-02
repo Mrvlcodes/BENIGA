@@ -603,6 +603,7 @@ input[type='email']{
     .product-card {
       width: 20rem;
       height: 20rem;
+        gap: 1rem 1rem;
     }
     .giveaway-text {
       padding: 1rem;
@@ -759,6 +760,9 @@ input[type='email']{
     }
     main{
         padding: 0;
+    }
+    .product-card {
+       gap: 1rem 1rem;
     }
 }
 @media (max-width:423px){
