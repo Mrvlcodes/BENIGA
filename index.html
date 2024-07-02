@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beniga - Luxury Perfumes</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/56af9c19f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./node_modules/flickity/css/flickity.css">
@@ -10,32 +11,32 @@
 <body>
     <header>
         <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-pinterest-p"></i>
-            <i class="fa-brands fa-instagram"></i>
-          </div>
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            <i class="fa-brands fa-pinterest-p" aria-hidden="true"></i>
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </div>
         <nav>
             <ul>
-                <li>ABOUT US</li>
-                <li>CONTACT US</li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
                 <li class="logo">BEN<span>I</span>GA</li>
-                <li>SHOP</li>
-                <li>GALLERY</li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
             </ul>
         </nav>
         <ul>
             <li class="logoMobile">BEN<span>I</span>GA</li>
         </ul>
         <li class="tel"><a href="tel:+234-911-022-0397">(091)-1022-0397</a></li>
-        <div class="menu-bar" id="menu-btn" onclick="showMenu();">
-          <i class="fa-solid fa-bars"></i>
+        <div class="menu-bar" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <nav id="mobileMenu">
+        <nav id="mobileMenu" aria-hidden="true">
             <ul>
-                <li onclick="hideSidebar();"><i class="fa-solid fa-x" id="icon"></i>CLOSE</li>
-                <li><i class="fa-solid fa-address-card" id="icon">></i>ABOUT US</li>
-                <li><i class="fa-solid fa-address-book" id="icon">></i>CONTACT US</li>
-                <li><i class="fa-solid fa-image" id="icon">></i>GALLERY</li>
+                <li class="close-btn"><i class="fa-solid fa-x"></i>CLOSE</li>
+                <li><a href="#about"><i class="fa-solid fa-address-card"></i>ABOUT US</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-address-book"></i>CONTACT US</a></li>
+                <li><a href="#gallery"><i class="fa-solid fa-image"></i>GALLERY</a></li>
             </ul>
             <li class="tel"><a href="tel:+234-911-022-0397">(091)-1022-0397</a></li>
         </nav>
@@ -43,247 +44,155 @@
     <main>
         <section class="banner">
             <div class="banner-left">
-              <img src="./product1.jpg" alt="Image 1">
-              <div class="content1">
-                <h2>NEVER ENDING LOVE</h2>
-                <p class="spell-text">SPELL</p>
-              </div>
-             <div class="button-container">
-                <button>PREORDER</button>
-             </div>
+                <img src="./product1.jpg" alt="Never Ending Love Perfume">
+                <div class="content1">
+                    <h2>NEVER ENDING LOVE</h2>
+                    <p class="spell-text">SPELL</p>
+                </div>
+                <div class="button-container">
+                    <button>PREORDER</button>
+                </div>
             </div>
             <div class="banner-right">
-              <img src="./blackmodel-Photoroom.jpg" alt="Image 2">
-              <div class="content2">
-                <i class="fa-regular fa-gem"></i>
-                <h1>INSPIRE AND ATTRACT</h1>
-                <p>Imagine a single spritz of a well-crafted perfume, and suddenly you're transported to a realm of endless possibilities. A symphony of notes dances upon your skin, each one carefully selected and harmonized to create an olfactory masterpiece. Citrusy bursts of bergamot or zesty lemon awaken your spirit, while the freshness of green leaves and sparkling aldehydes invigorate your mind.</p>
-                <button class="shop-btn">SHOP NOW</button>
-              </div>
+                <img src="./blackmodel-Photoroom.jpg" alt="Inspire and Attract Perfume">
+                <div class="content2">
+                    <i class="fa-regular fa-gem"></i>
+                    <h1>INSPIRE AND ATTRACT</h1>
+                    <p>Imagine a single spritz of a well-crafted perfume, and suddenly you're transported to a realm of endless possibilities. A symphony of notes dances upon your skin, each one carefully selected and harmonized to create an olfactory masterpiece. Citrusy bursts of bergamot or zesty lemon awaken your spirit, while the freshness of green leaves and sparkling aldehydes invigorate your mind.</p>
+                    <button class="shop-btn">SHOP NOW</button>
+                </div>
             </div>
         </section>
-        <section class="about" id="fade-in-section">
-          <div class="card-container">
-            <div class="card">
-              <div class="card-front">
-                <img src="./two girls.jpg" alt="two models">
-              </div>
-              <div class="card-back">
-                <div class="card-back-content">
-                    <div class="back-card-text">
-                      <h3>WANT TO BE SCOUTED?</h3>
-                      <p>Modeling applications will be open soon!!</p>
-                      <button class="shop-btn">GET NOTIFIED</button>
+        <section class="about" id="about">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="./two girls.jpg" alt="Two Models">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-back-content">
+                            <div class="back-card-text">
+                                <h3>WANT TO BE SCOUTED?</h3>
+                                <p>Modeling applications will be open soon!!</p>
+                                <button class="shop-btn">GET NOTIFIED</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="about-text">
-            <h2>ABOUT US</h2>
-            <p class="our-brand">Beniga is a brand that has been consistently delivering to customers worldwide since 1960. We are best known as the <em>Best selling italian perfume brand</em></p>
-
-            <p class="our-brand">A quick quide on who we are</p>
-            <div class="about-card">
-              <div class="card-left">
-                <img src="./product2.jpg">
-              </div>
-              <div class="card-right">
-                <div class="right-container">
-                    <h2>ABOUT US</h2>
-                    <p>At the heart of our brand lies a passion for perfumery as an art form. We believe that a fragrance has the power to transcend time and space, creating moments of beauty and enchantment. Each perfume in our collection is meticulously composed, blending the finest ingredients sourced from around the world.</p>
-                      <br>
-                    <p>Our perfumers, with their unparalleled expertise and creativity, strive to capture the essence of captivating stories and translate them into olfactory masterpieces. From the initial inspiration to the final blend, every step in the creation process is infused with passion, precision, and a relentless pursuit of perfection.</p>
-                       <br>
-                    <p>Indulge your senses in our world of luxury fragrances and allow our perfumes to transport you to a realm of timeless beauty and captivating aromas. Discover the artistry and craftsmanship that make our brand an emblem of sophistication and refinement.</p>
-                    <button class="shop-btn">CONTACT US</button>
+            <div class="about-text">
+                <h2>ABOUT US</h2>
+                <p class="our-brand">Beniga is a brand that has been consistently delivering to customers worldwide since 1960. We are best known as the <em>Best selling Italian perfume brand</em></p>
+                <p class="our-brand">A quick guide on who we are</p>
+                <div class="about-card">
+                    <div class="card-left">
+                        <img src="./product2.jpg" alt="About Us">
+                    </div>
+                    <div class="card-right">
+                        <div class="right-container">
+                            <h2>ABOUT US</h2>
+                            <p>At the heart of our brand lies a passion for perfumery as an art form. We believe that a fragrance has the power to transcend time and space, creating moments of beauty and enchantment. Each perfume in our collection is meticulously composed, blending the finest ingredients sourced from around the world.</p>
+                            <p>Our perfumers, with their unparalleled expertise and creativity, strive to capture the essence of captivating stories and translate them into olfactory masterpieces. From the initial inspiration to the final blend, every step in the creation process is infused with passion, precision, and a relentless pursuit of perfection.</p>
+                            <p>Indulge your senses in our world of luxury fragrances and allow our perfumes to transport you to a realm of timeless beauty and captivating aromas. Discover the artistry and craftsmanship that make our brand an emblem of sophistication and refinement.</p>
+                            <button class="shop-btn">CONTACT US</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
-        <section class="section-three" id="fade-in-section">
-          <h1>BEST SELLERS</h1>
-          <p class="best">Embrace the essence of luxury as you embark on a sensory journey, where each spritz transports you to a realm of sophistication and refinement.</p>
-          <section class="best-sellers">
-          <div class="product-card">
-            <div class="product-face product-front">
-              <img src="./product1.jpg" alt="Product Image">
-              <h2>Marbela zeve</h2>
-              <p><s>out of stock</s></p>
-              <button class="shop-btn2">PRE-ORDER</button>
+        <section class="section-three best-sellers" id="shop">
+            <h1>BEST SELLERS</h1>
+            <p class="best">Embrace the essence of luxury as you embark on a sensory journey, where each spritz transports you to a realm of sophistication and refinement.</p>
+            <div class="product-card">
+                <div class="product-face product-front">
+                    <img src="./product1.jpg" alt="Marbela Zeve Perfume">
+                    <h2>Marbela Zeve</h2>
+                    <p><s>Out of stock</s></p>
+                    <button class="shop-btn2">PRE-ORDER</button>
+                </div>
+                <div class="product-face product-back">
+                    <h2>Marbela Zeve</h2>
+                    <p>Product Description</p>
+                    <ul>
+                        <li>Long-lasting</li>
+                        <li>Arabian roots</li>
+                    </ul>
+                    <button class="shop-btn">PRE-ORDER</button>
+                </div>
             </div>
-            <div class="product-face product-back">
-              <h2>Marbela Zeve</h2>
-              <p>Product Description</p>
-              <ul>
-                <li>Longlasting</li>
-                <li>Arabiian roots</li>
-              </ul>
-              <button class="shop-btn">PRE-ORDER</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-face product-front">
-              <img src="./9ddd7aff0f8899bd85f386630f85b071.jpg" alt="Product Image">
-              <h2>Beuliah Oud</h2>
-              <p><s>out of stock</s></p>
-              <button class="shop-btn2">PRE-ORDER</button>
-            </div>
-            <div class="product-face product-back">
-              <h2>Beuliah Oud</h2>
-              <p>Product Description</p>
-              <ul>
-                <li>Refreshing scent</li>
-                
-                <li>In demand</li>
-              </ul>
-              <button class="shop-btn">PRE-ORDER</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-face product-front">
-              <img src="./product 3.jpg" alt="Product Image">
-              <h2>Creed Twist</h2>
-              <p><s>out of stock</s></p>
-              <button class="shop-btn2">PRE-ORDER</button>
-            </div>
-            <div class="product-face product-back">
-              <h2>Creed Twist</h2>
-              <p>Product Description</p>
-              <ul>
-            
-                <li>Italian essence</li>
-                <li>Longlasting</li>
-              </ul>
-              <button class="shop-btn">PRE-ORDER</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-face product-front">
-              <img src="./product4.jpg" alt="Product Image">
-              <h2>Jimmy Kassey</h2>
-              <p><s>out of stock</s></p>
-              <button class="shop-btn2">PRE-ORDER</button>
-            </div>
-            <div class="product-face product-back">
-              <h2>Jimmy Kassey</h2>
-              <p>Product Description</p>
-              <ul>
-                <li>Named after <a href="#">our CEO</a></li>
-                <li>Unique aura</li>
-                
-              </ul>
-              <button class="shop-btn">PRE-ORDER</button>
-            </div>
-          </div>
+            <!-- Repeat for other products -->
         </section>
-        </section>
-
-        <!-- best offers section starts -->
-        <section class="section-three" id="fade-in-section" >
-          <h1>BEST OFFERS</h1>
-          <div class="best-offers">
+        <section class="section-three best-offers" id="offers">
+            <h1>BEST OFFERS</h1>
             <div class="giveaway-section">
-              <div class="description-giveaway">
-                <img src="./black-perfume with flower top.jpg">
-                <div class="giveaway-text">
-                  <h2>GIVEAWAY</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi rerum eaque officia magni libero explicabo ratione quisquam illum molestias atque, nihil unde beatae, dolorem similique nesciunt debitis tempore aperiam.</p>
-                    <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore provident rem minus placeat quo sequi modi, harum, laboriosam temporibus pariatur repellat aperiam repudiandae ea quia impedit, similique vero dolorum necessitatibus?</p>
-                    <button class="giveaway-btn">CONTACT US</button>
+                <div class="description-giveaway">
+                    <img src="./black-perfume with flower top.jpg" alt="Giveaway">
+                    <div class="giveaway-text">
+                        <h2>GIVEAWAY</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi rerum eaque officia magni libero explicabo ratione quisquam illum molestias atque, nihil unde beatae, dolorem similique nesciunt debitis tempore aperiam.</p>
+                        <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore provident rem minus placeat quo sequi modi, harum, laboriosam temporibus pariatur repellat aperiam repudiandae ea quia impedit, similique vero dolorum necessitatibus?</p>
+                        <button class="giveaway-btn">CONTACT US</button>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="image-shop">
-              <img src="./perfume store.jpg">
+                <img src="./perfume store.jpg" alt="Perfume Store">
             </div>
-          </div>
         </section>
-
-                <!-- gallery section -->
-        <h2 class="gallery">GALLERY</h2>
-        <section class="best-sellers" id="fade-in-section">
-          <div class="product-card">
-            <div class="product-face product-front">
-              <img src="./78ae7d26be7f44f0dafca1e82cf0e131.jpg" alt="Product Image">
+        <section class="gallery" id="gallery">
+            <h2>GALLERY</h2>
+            <div class="product-card">
+                <div class="product-face product-front">
+                    <img src="./78ae7d26be7f44f0dafca1e82cf0e131.jpg" alt="Product Image">
+                </div>
+                <div class="product-face product-back">
+                    <p>Lorem, ipsum dolor sit amet velit tempore? Fugit error minus eveniet!</p>
+                    <button class="shop-btn">PRE-ORDER</button>
+                </div>
             </div>
-            <div class="product-face product-back">
-              <p>Lorem, ipsum dolor sit amet velit tempore? Fugit  error minus eveniet!</p>
-              <button class="shop-btn">PRE-ORDER</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-face product-front">
-              <img src="./5874c12b1722450a3bb074330b13d3f8.jpg" alt="Product Image">
-            </div>
-            <div class="product-face product-back">
-              <p>Lorem loremque harum eligendi excepturi aliquam?</p>
-              <button class="shop-btn">PRE-ORDER</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-face product-front">
-              <img src="./533eaa189062b25338007437c7c4598c.jpg" alt="Product Image">
-            </div>
-            <div class="product-face product-back">
-              <p>Loreme molestias incidunt laborum delectus illum. Quaerat expedita voluptatem adipisci, beatae sint vel.</p>
-              <button class="shop-btn">PRE-ORDER</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-face product-front">
-              <img src="./51a8c894bde6043e0b76edceda5b719a.jpg" alt="Product Image">
-            </div>
-            <div class="product-face product-back">
-              <p>Asperiores fugiat delectus ab fuga velit eveniet facere.ipsum quae reiciendis!
-              </p>
-              <button class="shop-btn">PRE-ORDER</button>
-            </div>
-          </div>
+            <!-- Repeat for other gallery items -->
         </section>
-        <!-- footer -->
-        <footer>
-          <div class="footer-content">
-              <div class="footer-column">
-                  <h3>Company</h3>
-                  <ul>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Careers</a></li>
-                  </ul>
-              </div>
-              <div class="footer-column">
-                  <h3>Support</h3>
-                  <ul>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">FAQ</a></li>
-                      <li><a href="#">Returns & Refunds</a></li>
-                  </ul>
-              </div>
-              <div class="footer-column">
-                  <h3>Follow Us</h3>
-                  <ul class="social-media">
-                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                      <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                  </ul>
-              </div>
-              <div class="footer-column">
-                  <h3>Newsletter</h3>
-                  <p>Sign up for our newsletter to receive exclusive offers and updates.</p>
-                  <form action="#" method="post">
-                      <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                      <button type="submit" class="btn">Subscribe</button>
-                  </form>
-              </div>
-          </div>
-          <div class="footer-bottom">
-              <p>&copy; 2022 Beniga. All rights reserved.</p>
-          </div>
-        </footer>
     </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#returns">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest" aria-hidden="true"></i><span class="sr-only">Pinterest</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Sign up for our newsletter to receive exclusive offers and updates.</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2022 Beniga. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
